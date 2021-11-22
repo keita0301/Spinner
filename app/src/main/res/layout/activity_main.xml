@@ -8,7 +8,7 @@
 
     <Spinner
         android:id="@+id/preSpinner"
-        android:layout_width="409dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
         android:layout_marginTop="158dp"
@@ -21,7 +21,7 @@
 
     <Spinner
         android:id="@+id/citySpinner"
-        android:layout_width="409dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
         android:layout_marginTop="229dp"
