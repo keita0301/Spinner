@@ -6,30 +6,71 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="16dp"
+        android:text="絞り込み"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Spinner
         android:id="@+id/preSpinner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="158dp"
+        android:layout_marginTop="130dp"
         android:layout_marginEnd="1dp"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck"
+        android:textSize="@dimen/sp_m"/>
 
     <Spinner
         android:id="@+id/citySpinner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="229dp"
+        android:layout_marginTop="52dp"
         android:layout_marginEnd="1dp"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/preSpinner"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:textSize="@dimen/sp_l"/>
+
+    <EditText
+        android:id="@+id/inputNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="52dp"
+        android:digits="0123456789"
+        android:inputType="number"
+        android:maxLength="2"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/citySpinner"
         tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="65dp"
+        android:text="人"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/inputNum"
+        app:layout_constraintTop_toBottomOf="@+id/citySpinner" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
