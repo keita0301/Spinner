@@ -28,8 +28,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="SpeakableTextPresentCheck"
-        android:textSize="@dimen/sp_m"/>
+        tools:ignore="SpeakableTextPresentCheck"/>
 
     <Spinner
         android:id="@+id/citySpinner"
@@ -43,8 +42,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/preSpinner"
-        tools:ignore="SpeakableTextPresentCheck"
-        android:textSize="@dimen/sp_l"/>
+        tools:ignore="SpeakableTextPresentCheck"/>
 
     <EditText
         android:id="@+id/inputNum"
